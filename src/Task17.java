@@ -10,7 +10,7 @@ public class Task17 {
             BufferedWriter writer = new BufferedWriter(new FileWriter("/Users/romanzuev/Desktop/test.txt"));
             String line;
             while (!(line = reader.readLine()).equals("stop")) {
-                writer.write(line);
+                writer.write(line + "\n");
             }
             writer.close();
         } catch (Exception e) {
